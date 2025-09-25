@@ -2,33 +2,33 @@ indent-width = 4
 line-length = 100
 target-version = "py312"
 extend-include = ["*.ipynb"]
-exclude = [
-]
 
 [lint]
 select = ["ALL"]
 fixable = ["ALL"]
 ignore = [
-    "COM812",
-    "Q000",
-    "Q003",
-    "T201",
-    "PD901",
-    "N816",
-    "PLR2004",
-    "ERA001",
-    "D",
-    "ANN",
-    "E501",
-    "FBT003",
-    "ICN001",
-    "NPY002",
-    "PD",
-    "PLC0414",
-    "PTH",
-    "RUF003",
-    "SIM115",
-    "W291",
+    # "D203",  # incorrect-blank-line-before-class (incompatible with D211)
+    # "D213",  # multi-line-summary-second-line (incompatible with D212)
+    "COM812", # Trailing comma missing
+    "Q000",   # Bad quotes inline string
+    "Q003",   # Bad quotes docstring
+    "T201",   # print found
+    "PD901",  # Avoid using the generic variable name `df`
+    "N816",   # Variable in global scope should not be mixedCase
+    "PLR2004",# Magic value used in comparison
+    "ERA001", # Found commented-out code
+    "D",      # Docstring rules
+    "ANN",    # Annotation rules
+    "E501",   # Line too long
+    "FBT003", # Boolean positional value
+    "ICN001", # Numpy import alias
+    "NPY002", # Legacy numpy random
+    "PD",     # Pandas specific rules (ignore all PD*)
+    "PLC0414",# Import alias does not rename
+    "PTH",    # Pathlib preferred over os.path (ignore all PTH*)
+    "RUF003", # Ambiguous unicode character
+    "SIM115", # Missing `with open`
+    "W291",   # Trailing whitespace
 ]
 
 [format]

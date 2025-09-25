@@ -1,6 +1,21 @@
 {
-    "editor.formatOnSave": true,
-    "notebook.formatOnSave.enabled": true,
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "notebook.defaultFormatter": "charliermarsh.ruff"
+  "editor.tabSize": 4,
+  "editor.formatOnSave": true,
+
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "python.defaultInterpreterPath": "./.venv/bin/python",
+
+  "ruff.enable": true,
+  "ruff.fixAll": true,
+  "ruff.organizeImports": true,
+  "ruff.lint.enable": true,
+
+  "jupyter.askForKernelRestart": false,
+  "notebook.formatOnSave.enabled": true,
+  "notebook.formatOnCellExecution": true,
+  "notebook.diff.enablePreview": true,
+  "notebook.insertFinalNewline": true,
+  "notebook.lineNumbers": "on",
 }
