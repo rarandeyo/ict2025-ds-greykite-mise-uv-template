@@ -1,0 +1,36 @@
+indent-width = 4
+line-length = 100
+target-version = "py312"
+extend-include = ["*.ipynb"]
+exclude = [
+]
+
+[lint]
+select = ["ALL"]
+fixable = ["ALL"]
+ignore = [
+    "COM812",
+    "Q000",
+    "Q003",
+    "T201",
+    "PD901",
+    "N816",
+    "PLR2004",
+    "ERA001",
+    "D",
+    "ANN",
+    "E501",
+    "FBT003",
+    "ICN001",
+    "NPY002",
+    "PD",
+    "PLC0414",
+    "PTH",
+    "RUF003",
+    "SIM115",
+    "W291",
+]
+
+[format]
+quote-style = "single"
+indent-style = "space"

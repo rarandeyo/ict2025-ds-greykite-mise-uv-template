@@ -1,0 +1,9 @@
+[tools]
+python = "3.10.15"
+uv = "latest"
+
+[tasks.sync]
+description = "Install project dependencies with uv"
+run = "uv sync"
+
+
