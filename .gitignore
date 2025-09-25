@@ -5,6 +5,7 @@
 __pycache__/
 *.py[cod]
 *.pyo
+*.egg-info/
 
 # Testing / tooling caches
 .pytest_cache/
