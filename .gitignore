@@ -9,7 +9,7 @@ __pycache__/
 
 # Testing / tooling caches
 .pytest_cache/
-ruff_cache/
+.ruff_cache/
 
 # Jupyter artifacts
 .ipynb_checkpoints/

@@ -5,5 +5,3 @@ uv = "latest"
 [tasks.sync]
 description = "Install project dependencies with uv"
 run = "uv sync"
-
-
