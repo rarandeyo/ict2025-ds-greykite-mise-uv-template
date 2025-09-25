@@ -2,6 +2,7 @@ indent-width = 4
 line-length = 100
 target-version = "py312"
 extend-include = ["*.ipynb"]
+extend-exclude = ["env_check-ict2025-ds-greykite.ipynb"]
 
 [lint]
 select = ["ALL"]
@@ -22,6 +23,7 @@ ignore = [
     "E501",   # Line too long
     "FBT003", # Boolean positional value
     "ICN001", # Numpy import alias
+    "ISC001", # Implicit string concatenation conflicts with formatter
     "NPY002", # Legacy numpy random
     "PD",     # Pandas specific rules (ignore all PD*)
     "PLC0414",# Import alias does not rename
