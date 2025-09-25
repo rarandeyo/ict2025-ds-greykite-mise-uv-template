@@ -6,6 +6,7 @@
 
 ## Usage
 セットアップ
+- Trust: `mis trust .`
 - Install tools: `mise install`
 - Sync deps: `mise run sync`
 
